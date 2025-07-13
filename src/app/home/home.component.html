@@ -1,0 +1,20 @@
+<h1 class="text-center my-4 text-primary">DB Z</h1>
+
+<div class="container">
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let hero of heroi">
+      <div class="card h-100 shadow-sm border-primary">
+        <img src="{{ hero.image }}" class="card-img-top p-3 rounded mx-auto d-block" style="width: 100%; max-width: 180px; height: auto; background: #f8f9fa; object-fit: contain;" alt="{{ hero.name }}" />
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title text-center text-primary">{{ hero.name }}</h5>
+          <ul class="list-group list-group-flush mb-2">
+            <li class="list-group-item"><i class="bi bi-lightning-charge text-warning"></i> <strong>Ki:</strong> {{ hero.ki }}</li>
+            <li class="list-group-item"><i class="bi bi-lightning"></i> <strong>Max Ki:</strong> {{ hero.maxKi }}</li>
+            <li class="list-group-item"><i class="bi bi-gender-ambiguous"></i> <strong>Gênero:</strong> {{ hero.gender }}</li>
+          </ul>
+          <p class="card-text small text-muted mt-auto">{{ hero.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

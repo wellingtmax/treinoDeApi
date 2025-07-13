@@ -1,0 +1,9 @@
+<h1 class="text-center">Feitiços de Potter</h1>
+<div class="bg-dark border p-2">
+<div class="container row row-col-2 mb-2 p-3 text-center" style="width: 1020vw;">
+  <div class="row col-3 themed-grid-col border border-danger m-2 py-3" *ngFor="let element of feiticos">
+    <p class="text-success fs-4">{{ element.spell }}</p>
+    <p class="text-primary">{{ element.use }}</p>
+  </div>
+</div>
+</div>
